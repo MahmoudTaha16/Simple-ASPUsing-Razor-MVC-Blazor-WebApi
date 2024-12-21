@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ToDo>;
+
+
+<div class="">
+    <ul>
+        @foreach (var toDo in Model)
+        {
+            <li>
+                <p>@toDo.Description</p>
+                <p>@toDo.IsCompleted</p>
+            </li>
+        }
+    </ul>
+</div>
+

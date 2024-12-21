@@ -1,0 +1,15 @@
+﻿@page
+@model ASP.NET.RazorPage.Pages.ToDosModel
+
+    <div class="">
+        <ul>
+        @foreach (var toDo in Model.ToDos)
+        {
+            <li>
+                <p>@toDo.Description</p>
+                <p>@toDo.IsCompleted</p>
+            </li>
+        }
+        </ul>
+    </div>
+
